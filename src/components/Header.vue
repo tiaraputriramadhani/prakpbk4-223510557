@@ -1,7 +1,8 @@
-<!-- Header.vue -->
 <template>
     <header class="header">
-      <h1>AMOR</h1>
+      <h1>
+        <slot name="header-title">AMOR</slot>
+      </h1>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -10,7 +11,7 @@
         </ul>
       </nav>
     </header>
-  </template>
+</template>
   
   <script setup>
   </script>

@@ -1,10 +1,14 @@
 <template>
     <div class="popup" v-if="profile">
       <div class="popup-content">
-        <img :src="profile.photo" alt="Profile Photo" />
-        <h2>{{ profile.name }}</h2>
-        <p>{{ profile.description }}</p>
-        <button @click="closePopup">Close</button>
+        <slot name="popup-title">
+          <h2>{{ profile.name }}</h2>
+        </slot>
+        <slot name="popup-content">
+          <img :src="profile.photo" alt="Profile Photo" />
+          <p>{{ profile.description }}</p>
+          <button @click="closePopup">Close</button>
+        </slot>
       </div>
     </div>
   </template>

@@ -3,13 +3,15 @@
       <ul class="profile-list">
         <li v-for="profile in profiles" :key="profile.id">
           <button @click="selectProfile(profile)">
-            <img :src="profile.photo" alt="Profile Photo" />
-            <p>{{ profile.name }}</p>
+            <slot name="profile-button">
+              <img :src="profile.photo" alt="Profile Photo" />
+              <p>{{ profile.name }}</p>
+            </slot>
           </button>
         </li>
       </ul>
     </div>
-  </template>
+</template>
   
   <script setup>
   const props = defineProps({
