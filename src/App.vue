@@ -19,13 +19,13 @@ const profiles = ref([
   {
     id: 1,
     name: 'Lee Jeno',
-    photo: 'public/images/hubby1.jpeg',
+    photo: './images/hubby1.jpeg',
     description: ' Mi sto innamorando di te.'
   },
   {
     id: 2,
     name: 'Mark Lee',
-    photo: 'public/images/hubby2.jpeg',
+    photo: './images/hubby2.jpeg',
     description: 'To the world you may be one person, but to one person you are the world.'
   }
 ]);
