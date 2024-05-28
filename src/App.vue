@@ -14,6 +14,8 @@ import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 import Popup from './components/Popup.vue';
 import ProfileList from './components/ProfileList.vue';
+import hubby1 from 'public/images/hubby1.jpeg';
+import hubby2 from 'public/images/hubby2.jpeg';
 
 const profiles = ref([
   {
